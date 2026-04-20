@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Smart Campus Sensor & Room Management API
 
 > **5COSC022W — Client-Server Architectures Coursework**
@@ -454,3 +455,7 @@ A **ContainerRequestFilter / ContainerResponseFilter** intercepts every single H
 ---
 
 *Report prepared in accordance with 5COSC022W Coursework Specification v3.1 | University of Westminster 2025/26*
+=======
+# smartcampus-api
+Smart Campus Sensor &amp; Room Management API - JAX-RS REST API
+>>>>>>> a1fe57b6bb844b9cb45dde9318ea45548e42d94f
