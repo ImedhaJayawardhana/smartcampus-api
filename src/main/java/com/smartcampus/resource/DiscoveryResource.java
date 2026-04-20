@@ -38,8 +38,8 @@ public class DiscoveryResource {
         // Administrative contact
         Map<String, String> contact = new LinkedHashMap<>();
         contact.put("team", "Smart Campus Infrastructure Team");
-        contact.put("email", "smartcampus-admin@university.ac.uk");
-        contact.put("documentation", "https://github.com/your-username/smartcampus-api");
+        contact.put("email", "w2120502@westminster.ac.uk");
+        contact.put("documentation", "https://github.com/ImedhaJayawardhana/smartcampus-api");  
         response.put("contact", contact);
 
         // HATEOAS-style resource links (hypermedia navigation)
