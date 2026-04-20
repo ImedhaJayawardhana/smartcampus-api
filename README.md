@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Smart Campus Sensor & Room Management API
 
 > **5COSC022W — Client-Server Architectures Coursework**
@@ -6,18 +6,6 @@
 
 A fully RESTful JAX-RS API built with Jersey 2, Maven, and Apache Tomcat for managing campus rooms, sensors, and sensor readings.
 
----
-
-## Table of Contents
-
-1. [API Overview](#api-overview)
-2. [Technology Stack](#technology-stack)
-3. [Project Structure](#project-structure)
-4. [Build & Run Instructions](#build--run-instructions)
-5. [Sample curl Commands](#sample-curl-commands)
-6. [Conceptual Report — Question Answers](#conceptual-report--question-answers)
-
----
 
 ## API Overview
 
@@ -45,7 +33,6 @@ The Smart Campus API provides a RESTful interface for campus facilities managers
 | IDE              | NetBeans IDE                    |
 | Data Storage     | In-memory (`ConcurrentHashMap`) |
 
-> ⚠️ **No Spring Boot. No database. No ZIP submission.** All constraints satisfied.
 
 ---
 
@@ -95,68 +82,6 @@ smartcampus-api/
 - Apache Maven 3.6+ installed
 - Apache Tomcat 9.x installed
 - NetBeans IDE (with Tomcat configured as a server)
-
----
-
-### Step 1 — Clone the Repository
-
-```bash
-git clone https://github.com/your-username/smartcampus-api.git
-cd smartcampus-api
-```
-
----
-
-### Step 2 — Build the WAR File
-
-```bash
-mvn clean package
-```
-
-This produces `target/smartcampus-api.war`.
-
----
-
-### Step 3 — Deploy to Tomcat
-
-**Option A — Via NetBeans (Recommended):**
-
-1. Open NetBeans → File → Open Project → select the `smartcampus-api` folder
-2. Right-click the project → Properties → Run → set Server to Apache Tomcat 9
-3. Right-click the project → Run (or press F6)
-4. NetBeans will build, deploy, and open the browser automatically
-
-**Option B — Manual Tomcat Deployment:**
-
-```bash
-# Copy the WAR to Tomcat's webapps directory
-cp target/smartcampus-api.war /path/to/tomcat/webapps/
-
-# Start Tomcat
-/path/to/tomcat/bin/startup.sh      # Linux/macOS
-/path/to/tomcat/bin/startup.bat     # Windows
-```
-
----
-
-### Step 4 — Verify Deployment
-
-Open your browser or run:
-
-```bash
-curl http://localhost:8080/smartcampus-api/api/v1
-```
-
-You should receive a JSON discovery response confirming the API is live.
-
----
-
-### Step 5 — Stop the Server
-
-```bash
-/path/to/tomcat/bin/shutdown.sh    # Linux/macOS
-/path/to/tomcat/bin/shutdown.bat   # Windows
-```
 
 ---
 
@@ -453,9 +378,3 @@ Inserting `Logger.info()` calls into every resource method violates the **DRY pr
 A **ContainerRequestFilter / ContainerResponseFilter** intercepts every single HTTP interaction at the framework level, regardless of which resource method handles it. Logging is guaranteed to be complete, consistent, and formatted uniformly. Changing the log format requires editing exactly one class. This is the **cross-cutting concern** principle in action — concerns like logging, authentication, and CORS that span all endpoints belong in filters, not in business logic.
 
 ---
-
-*Report prepared in accordance with 5COSC022W Coursework Specification v3.1 | University of Westminster 2025/26*
-=======
-# smartcampus-api
-Smart Campus Sensor &amp; Room Management API - JAX-RS REST API
->>>>>>> a1fe57b6bb844b9cb45dde9318ea45548e42d94f
