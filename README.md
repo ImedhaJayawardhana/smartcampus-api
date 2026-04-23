@@ -64,6 +64,36 @@ This project implements a RESTful Smart Campus API using JAX-RS (Jersey 2.39.1) 
 - Apache Tomcat 9.x
 - NetBeans IDE
 ---
+### Step 1 — Clone the Repository
+```bash
+git clone https://github.com/ImedhaJayawardhana/smartcampus-api.git
+cd smartcampus-api/smartcampus
+```
+ 
+### Step 2 — Build the Project
+```bash
+mvn clean package
+```
+This produces `target/smartcampus-api.war`.
+ 
+### Step 3 — Deploy to Tomcat
+```bash
+# Copy WAR to Tomcat webapps folder
+cp target/smartcampus-api.war /path/to/tomcat/webapps/
+ 
+# Start Tomcat
+# Windows:
+/path/to/tomcat/bin/startup.bat
+# Linux/macOS:
+/path/to/tomcat/bin/startup.sh
+```
+ 
+### Step 4 — Access the API
+```
+http://localhost:8081/smartcampus-api/api/v1
+```
+ 
+---
 
 ## Sample curl Commands
 
